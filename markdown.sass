@@ -1,0 +1,215 @@
+$base-font-size: 1rem
+$base-line-height: 1.5rem
+
+$text: #2E3235
+$dark-text: #888888
+$link: #0E6493
+$border: #B1B1B1
+$cite: #777777
+$code-background: #F5F5F5
+$line-number-background: #DCDCDC
+
+.markdown
+
+  // TYPOGRAPHY
+
+  font-size: $base-font-size
+  line-height: $base-line-height
+  text-align: left
+  color: $text
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    font-weight: 400
+
+  h1
+    font-size: 3.375rem
+    line-height: 4.5rem
+    margin-top: 3rem
+    margin-bottom: 1.5rem
+
+  h2
+    font-size: 2.25rem
+    line-height: 3rem
+    margin-top: 3rem
+    margin-bottom: 1.5rem
+    border-bottom: 1px solid $border
+    padding-bottom: .25em
+
+  h3
+    font-size: 1.5rem
+    line-height: 1.5rem
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+
+  h4,
+  h5,
+  h6
+    font-size: 1rem
+    font-size: 1rem
+    font-weight: bold
+    line-height: 1.5rem
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+    text-transform: uppercase
+
+  b,
+  strong,
+  em,
+  small,
+  code
+    line-height: 1
+
+  sup,
+  sub
+    vertical-align: baseline
+    position: relative
+    top: -0.4em
+
+  sub
+    top: 0.4em
+
+  // LAYOUT
+
+  p,
+  ul,
+  ol,
+  blockquote
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+    font-size: $base-font-size
+    line-height: $base-line-height
+
+  ul,
+  ol
+    padding: 0 0 0 1.5rem
+
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol
+    margin: 0 0 1rem 1rem
+    padding: 0 0 0 1rem
+
+  aside
+    display: block
+    float: right
+    width: 390px
+
+  // LINKS
+
+  a
+    color: $link
+    margin: 0
+    padding: 0
+    text-shadow : 0 1px 0 rgba( 255, 255, 255, 0.5 )
+    &:hover
+      text-decoration: none
+      color: #ff6600
+    &:visited
+      color: #0E6493
+
+  // LISTS
+
+  li
+    line-height: 1.5rem
+
+  dt
+    font-weight: bold
+  dd
+    font-style: italic
+    margin-left: 1rem
+
+  // TABLES
+
+  td,
+  th
+    padding: .5rem .75rem
+    vertical-align: top
+
+  thead,
+  th
+    border-bottom: 2px solid $border
+
+  tr
+    border-bottom: 1px solid $border
+    &:last-of-type
+      border: none
+
+  // CODE
+
+  code
+    padding: .25rem .5rem
+
+  code,
+  .highlighttable
+    display: inline-block
+    border: 1px solid $border
+    background: $code-background
+    font-size: .9rem
+    font-family: Consolas, Monaco, Andale Mono, monospace
+
+    -moz-border-radius: 3px
+    -webkit-border-radius: 3px
+    border-radius: 3px
+    tr
+      border-bottom: none
+    td
+      vertical-align: top
+      &.linenos
+        border-right: 1px solid $border
+        color: $dark-text
+        text-shadow : 0 1px 0 rgba( 255, 255, 255, .5 )
+        padding: .5rem
+        pre
+          padding: 0
+          background: transparent
+
+  .code
+    padding: .5rem 0
+    width: 100%
+    pre
+      padding: 0 .5rem 0 1rem
+
+  .fenced-code
+    overflow: auto
+    padding-bottom: 1rem
+
+  // BLOCKQUOTES
+
+  blockquote
+    padding: 0 .75rem
+    margin : 1rem .75rem
+    border-left: 3px solid $text
+    p
+      font-style: italic
+
+  blockquote,
+  cite
+    color: $cite
+
+  blockquote
+    cite
+      &:before
+        content: '\2014 \00A0'
+
+  // IMAGES
+
+  img
+    display: block
+    max-width: 100%
+    height: auto
+    margin: 0 auto 1rem
+    padding: 0
+
+  // HORIZONTAL RULES
+
+  hr
+    border: none
+    height: 1px
+    margin: 2rem auto 2rem
+    background: $border
