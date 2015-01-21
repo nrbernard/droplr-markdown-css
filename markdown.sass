@@ -9,14 +9,19 @@ $cite: #777777
 $code-background: #F5F5F5
 $line-number-background: #DCDCDC
 
-.markdown
-
-  // TYPOGRAPHY
-
+html
+  font-size: 100%
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-style: normal
   font-size: $base-font-size
   line-height: $base-line-height
-  text-align: left
   color: $text
+
+.markdown
+  width: 640px
+  margin: 0 auto
+
+  // TYPOGRAPHY
 
   h1,
   h2,
@@ -81,8 +86,6 @@ $line-number-background: #DCDCDC
   blockquote
     margin-top: 1.5rem
     margin-bottom: 1.5rem
-    font-size: $base-font-size
-    line-height: $base-line-height
 
   ul,
   ol
