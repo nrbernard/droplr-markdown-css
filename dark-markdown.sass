@@ -1,0 +1,45 @@
+@import "markdown.sass"
+
+$text: #fff
+$link: #7CB4C5
+$border: #3D3D3D
+$background: #0C0D0D
+$code-background: #282829
+
+.markdown
+  color: $text
+
+  // TYPOGRAPHY
+
+  h2
+    border-bottom: 1px solid $border
+
+  a
+    color: $link
+    text-shadow: 0 0 0 transparent
+    &:visited
+      color: $link
+
+  // CODE
+
+  code,
+  .highlighttable
+    border: 1px solid $border
+    background: $code-background
+    td.linenos
+      border-right: 1px solid $border
+      text-shadow: none
+
+  // TABLES
+
+  thead,
+  th
+    border-bottom: 2px solid $border
+
+  tr
+    border-bottom: 1px solid $border
+
+  // BLOCKQUOTES
+
+  blockquote
+    border-left: 3px solid $border

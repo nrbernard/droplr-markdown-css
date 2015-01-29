@@ -1,0 +1,196 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: #2E3235; }
+
+.markdown {
+  text-align: left; }
+  .markdown h1,
+  .markdown h2,
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    font-weight: 400; }
+  .markdown h1 {
+    font-size: 3.375rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem; }
+  .markdown h2 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #B1B1B1;
+    padding-bottom: 0.25em; }
+  .markdown h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    font-size: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; }
+  .markdown b,
+  .markdown strong,
+  .markdown em,
+  .markdown small,
+  .markdown code {
+    line-height: 1; }
+  .markdown sup,
+  .markdown sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em; }
+  .markdown sub {
+    top: 0.4em; }
+  .markdown p,
+  .markdown ul,
+  .markdown ol,
+  .markdown blockquote {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+  .markdown ul,
+  .markdown ol {
+    padding: 0 0 0 1.5rem; }
+  .markdown ul ul,
+  .markdown ul ol,
+  .markdown ol ul,
+  .markdown ol ol {
+    margin: 0 0 1rem 1rem;
+    padding: 0 0 0 1rem; }
+  .markdown aside {
+    display: block;
+    float: right;
+    width: 390px; }
+  .markdown a {
+    color: #0E6493;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+    .markdown a:hover {
+      text-decoration: none;
+      color: #ff6600; }
+    .markdown a:visited {
+      color: #0E6493; }
+  .markdown li {
+    line-height: 1.5rem; }
+  .markdown dt {
+    font-weight: bold; }
+  .markdown dd {
+    font-style: italic;
+    margin-left: 1rem; }
+  .markdown table {
+    border-collapse: collapse;
+    border-spacing: 0px; }
+  .markdown td,
+  .markdown th {
+    padding: 0.5rem 0.75rem;
+    vertical-align: top; }
+  .markdown thead,
+  .markdown th {
+    border-bottom: 2px solid #B1B1B1; }
+  .markdown tr {
+    border-bottom: 1px solid #B1B1B1; }
+    .markdown tr:last-of-type {
+      border: none; }
+  .markdown pre {
+    font-size: 1rem;
+    margin: 0; }
+  .markdown code {
+    padding: 0.25rem 0.5rem; }
+  .markdown code,
+  .markdown .highlighttable {
+    display: inline-block;
+    border: 1px solid #B1B1B1;
+    background: #F5F5F5;
+    font-size: 0.9rem;
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+    .markdown code tr,
+    .markdown .highlighttable tr {
+      border-bottom: none; }
+    .markdown code td,
+    .markdown .highlighttable td {
+      vertical-align: top; }
+      .markdown code td.linenos,
+      .markdown .highlighttable td.linenos {
+        border-right: 1px solid #B1B1B1;
+        color: #888888;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        padding: 0.5rem; }
+        .markdown code td.linenos pre,
+        .markdown .highlighttable td.linenos pre {
+          padding: 0;
+          background: transparent; }
+  .markdown .code {
+    padding: 0.5rem 0;
+    width: 100%; }
+    .markdown .code pre {
+      padding: 0 0.5rem 0 1rem; }
+  .markdown .fenced-code {
+    overflow: auto;
+    padding-bottom: 1rem; }
+  .markdown blockquote {
+    padding: 0 0.75rem;
+    margin: 1rem 0.75rem;
+    border-left: 3px solid #2E3235; }
+    .markdown blockquote p {
+      font-style: italic; }
+  .markdown blockquote,
+  .markdown cite {
+    color: #777777; }
+  .markdown blockquote cite:before {
+    content: "— "; }
+  .markdown img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+    padding: 0; }
+  .markdown hr {
+    border: none;
+    height: 1px;
+    margin: 2rem auto 2rem;
+    background: #B1B1B1; }
+
+.markdown {
+  color: #fff; }
+  .markdown h2 {
+    border-bottom: 1px solid #3D3D3D; }
+  .markdown a {
+    color: #7CB4C5;
+    text-shadow: 0 0 0 transparent; }
+    .markdown a:visited {
+      color: #7CB4C5; }
+  .markdown code,
+  .markdown .highlighttable {
+    border: 1px solid #3D3D3D;
+    background: #282829; }
+    .markdown code td.linenos,
+    .markdown .highlighttable td.linenos {
+      border-right: 1px solid #3D3D3D;
+      text-shadow: none; }
+  .markdown thead,
+  .markdown th {
+    border-bottom: 2px solid #3D3D3D; }
+  .markdown tr {
+    border-bottom: 1px solid #3D3D3D; }
+  .markdown blockquote {
+    border-left: 3px solid #3D3D3D; }
+
+/*# sourceMappingURL=dark-markdown.css.map */
