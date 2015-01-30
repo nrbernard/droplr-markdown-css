@@ -78,10 +78,11 @@
     color: #0E6493;
     margin: 0;
     padding: 0;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-decoration: underline; }
     .markdown a:hover {
       text-decoration: none;
-      color: #ff6600; }
+      color: #0E6493; }
     .markdown a:visited {
       color: #0E6493; }
   .markdown li {
@@ -184,6 +185,8 @@
   .markdown a {
     color: #f28252;
     text-shadow: 0 0 0 transparent; }
+    .markdown a:hover {
+      color: #f28252; }
     .markdown a:visited {
       color: #f28252; }
   .markdown p {
