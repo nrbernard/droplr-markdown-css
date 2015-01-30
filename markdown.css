@@ -44,7 +44,7 @@
   .markdown em,
   .markdown small,
   .markdown code {
-    line-height: 1em; }
+    line-height: 1.625em; }
   .markdown sup,
   .markdown sub {
     vertical-align: baseline;
@@ -103,20 +103,26 @@
     .markdown tr:last-of-type {
       border: none; }
   .markdown pre {
-    font-size: 1em;
     margin: 0; }
+  .markdown pre,
   .markdown code {
-    padding: 0.25em 0.5em; }
+    font-size: 14px;
+    line-height: 20px; }
+  .markdown pre code, .markdown .code {
+    width: 100%;
+    padding: 0.5em 0.75em; }
   .markdown code,
   .markdown .highlighttable {
     display: inline-block;
     border: 1px solid #B1B1B1;
     background: #F5F5F5;
-    font-size: 0.9em;
     font-family: Consolas, Monaco, Andale Mono, monospace;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; }
+    .markdown code pre,
+    .markdown .highlighttable pre {
+      font-family: Consolas, Monaco, Andale Mono, monospace; }
     .markdown code tr,
     .markdown .highlighttable tr {
       border-bottom: none; }
@@ -133,11 +139,6 @@
         .markdown .highlighttable td.linenos pre {
           padding: 0;
           background: transparent; }
-  .markdown .code {
-    padding: 0.5em 0;
-    width: 100%; }
-    .markdown .code pre {
-      padding: 0 0.5em 0 1em; }
   .markdown .fenced-code {
     overflow: auto;
     padding-bottom: 1em; }

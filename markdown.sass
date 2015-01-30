@@ -1,5 +1,6 @@
 $base-font-size: 1em
 $base-line-height: 1.625em
+$code-font-family: Consolas, Monaco, Andale Mono, monospace
 
 $text: #33373a
 $dark-text: #888888
@@ -62,7 +63,7 @@ $line-number-background: #DCDCDC
   em,
   small,
   code
-    line-height: 1em
+    line-height: $base-line-height
 
   sup,
   sub
@@ -145,19 +146,25 @@ $line-number-background: #DCDCDC
   // CODE
 
   pre
-    font-size: 1em
     margin: 0
 
+  pre,
   code
-    padding: .25em .5em
+    font-size: 14px
+    line-height: 20px
+
+  pre code, .code
+    width: 100%
+    padding: .5em .75em
 
   code,
   .highlighttable
     display: inline-block
     border: 1px solid $border
     background: $code-background
-    font-size: .9em
-    font-family: Consolas, Monaco, Andale Mono, monospace
+    font-family: $code-font-family
+    pre
+      font-family: $code-font-family
 
     -moz-border-radius: 3px
     -webkit-border-radius: 3px
@@ -174,12 +181,6 @@ $line-number-background: #DCDCDC
         pre
           padding: 0
           background: transparent
-
-  .code
-    padding: .5em 0
-    width: 100%
-    pre
-      padding: 0 .5em 0 1em
 
   .fenced-code
     overflow: auto
