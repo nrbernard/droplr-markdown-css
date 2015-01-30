@@ -2,9 +2,9 @@
 .markdown {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.5rem;
-  color: #2E3235;
+  font-size: 1em;
+  line-height: 1.625em;
+  color: #33373a;
   text-align: left; }
   .markdown h1,
   .markdown h2,
@@ -12,40 +12,40 @@
   .markdown h4,
   .markdown h5,
   .markdown h6 {
-    font-weight: 400; }
+    font-weight: 400;
+    color: #33373a; }
   .markdown h1 {
-    font-size: 3.375rem;
-    line-height: 4.5rem;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem; }
+    font-size: 4.25em;
+    line-height: 1.14706em;
+    margin-top: 0.76471em;
+    margin-bottom: 0.38235em; }
   .markdown h2 {
-    font-size: 2.25rem;
-    line-height: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.625em;
+    line-height: 1.2381em;
+    margin-top: 1.2381em;
+    margin-bottom: 0.61905em;
     border-bottom: 1px solid #B1B1B1;
     padding-bottom: 0.25em; }
   .markdown h3 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
+    font-size: 1.625em;
+    line-height: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em; }
   .markdown h4,
   .markdown h5,
   .markdown h6 {
-    font-size: 1rem;
-    font-size: 1rem;
+    font-size: 1em;
+    line-height: 1.625em;
+    margin-top: 1.625em;
+    margin-bottom: 1.625em;
     font-weight: bold;
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
     text-transform: uppercase; }
   .markdown b,
   .markdown strong,
   .markdown em,
   .markdown small,
   .markdown code {
-    line-height: 1; }
+    line-height: 1.625em; }
   .markdown sup,
   .markdown sub {
     vertical-align: baseline;
@@ -53,21 +53,23 @@
     top: -0.4em; }
   .markdown sub {
     top: 0.4em; }
+  .markdown p {
+    color: #33373a; }
   .markdown p,
   .markdown ul,
   .markdown ol,
   .markdown blockquote {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
+    margin-top: 1.625em;
+    margin-bottom: 1.625em; }
   .markdown ul,
   .markdown ol {
-    padding: 0 0 0 1.5rem; }
+    padding: 0 0 0 1.5em; }
   .markdown ul ul,
   .markdown ul ol,
   .markdown ol ul,
   .markdown ol ol {
-    margin: 0 0 1rem 1rem;
-    padding: 0 0 0 1rem; }
+    margin: 0 0 1em 1em;
+    padding: 0 0 0 1em; }
   .markdown aside {
     display: block;
     float: right;
@@ -83,18 +85,18 @@
     .markdown a:visited {
       color: #0E6493; }
   .markdown li {
-    line-height: 1.5rem; }
+    line-height: 1.5em; }
   .markdown dt {
     font-weight: bold; }
   .markdown dd {
     font-style: italic;
-    margin-left: 1rem; }
+    margin-left: 1em; }
   .markdown table {
     border-collapse: collapse;
     border-spacing: 0px; }
   .markdown td,
   .markdown th {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5em 0.75em;
     vertical-align: top; }
   .markdown thead,
   .markdown th {
@@ -104,20 +106,26 @@
     .markdown tr:last-of-type {
       border: none; }
   .markdown pre {
-    font-size: 1rem;
     margin: 0; }
+  .markdown pre,
   .markdown code {
-    padding: 0.25rem 0.5rem; }
+    font-size: 14px;
+    line-height: 20px; }
+  .markdown pre code, .markdown .code {
+    width: 100%;
+    padding: 0.5em 0.75em; }
   .markdown code,
   .markdown .highlighttable {
     display: inline-block;
     border: 1px solid #B1B1B1;
     background: #F5F5F5;
-    font-size: 0.9rem;
     font-family: Consolas, Monaco, Andale Mono, monospace;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; }
+    .markdown code pre,
+    .markdown .highlighttable pre {
+      font-family: Consolas, Monaco, Andale Mono, monospace; }
     .markdown code tr,
     .markdown .highlighttable tr {
       border-bottom: none; }
@@ -129,25 +137,21 @@
         border-right: 1px solid #B1B1B1;
         color: #888888;
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        padding: 0.5rem; }
+        padding: 0.5em; }
         .markdown code td.linenos pre,
         .markdown .highlighttable td.linenos pre {
           padding: 0;
           background: transparent; }
-  .markdown .code {
-    padding: 0.5rem 0;
-    width: 100%; }
-    .markdown .code pre {
-      padding: 0 0.5rem 0 1rem; }
   .markdown .fenced-code {
     overflow: auto;
-    padding-bottom: 1rem; }
+    padding-bottom: 1em; }
   .markdown blockquote {
-    padding: 0 0.75rem;
-    margin: 1rem 0.75rem;
-    border-left: 3px solid #2E3235; }
+    padding: 0 0.75em;
+    margin: 1em 0.75em;
+    border-left: 3px solid #33373a; }
     .markdown blockquote p {
-      font-style: italic; }
+      font-style: italic;
+      color: #777777; }
   .markdown blockquote,
   .markdown cite {
     color: #777777; }
@@ -157,23 +161,33 @@
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1em;
     padding: 0; }
   .markdown hr {
     border: none;
     height: 1px;
-    margin: 2rem auto 2rem;
+    margin: 2em auto 2em;
     background: #B1B1B1; }
 
 .markdown {
-  color: #fff; }
+  color: #fff;
+  background: #0C0D0D; }
+  .markdown h1,
+  .markdown h2,
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    color: #fff; }
   .markdown h2 {
     border-bottom: 1px solid #3D3D3D; }
   .markdown a {
-    color: #7CB4C5;
+    color: #f28252;
     text-shadow: 0 0 0 transparent; }
     .markdown a:visited {
-      color: #7CB4C5; }
+      color: #f28252; }
+  .markdown p {
+    color: #fff; }
   .markdown code,
   .markdown .highlighttable {
     border: 1px solid #3D3D3D;
@@ -189,5 +203,3 @@
     border-bottom: 1px solid #3D3D3D; }
   .markdown blockquote {
     border-left: 3px solid #3D3D3D; }
-
-/*# sourceMappingURL=dark-markdown.css.map */

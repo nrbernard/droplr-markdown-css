@@ -12,7 +12,8 @@
   .markdown h4,
   .markdown h5,
   .markdown h6 {
-    font-weight: 400; }
+    font-weight: 400;
+    color: #33373a; }
   .markdown h1 {
     font-size: 4.25em;
     line-height: 1.14706em;
@@ -52,6 +53,8 @@
     top: -0.4em; }
   .markdown sub {
     top: 0.4em; }
+  .markdown p {
+    color: #33373a; }
   .markdown p,
   .markdown ul,
   .markdown ol,
@@ -147,7 +150,8 @@
     margin: 1em 0.75em;
     border-left: 3px solid #33373a; }
     .markdown blockquote p {
-      font-style: italic; }
+      font-style: italic;
+      color: #777777; }
   .markdown blockquote,
   .markdown cite {
     color: #777777; }
@@ -164,5 +168,3 @@
     height: 1px;
     margin: 2em auto 2em;
     background: #B1B1B1; }
-
-/*# sourceMappingURL=markdown.css.map */

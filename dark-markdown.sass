@@ -1,15 +1,23 @@
 @import "markdown.sass"
 
 $text: #fff
-$link: #7CB4C5
+$link: #f28252
 $border: #3D3D3D
 $background: #0C0D0D
 $code-background: #282829
 
 .markdown
   color: $text
+  background: $background
 
   // TYPOGRAPHY
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    color: $text
 
   h2
     border-bottom: 1px solid $border
@@ -19,6 +27,9 @@ $code-background: #282829
     text-shadow: 0 0 0 transparent
     &:visited
       color: $link
+
+  p
+    color: $text
 
   // CODE
 
