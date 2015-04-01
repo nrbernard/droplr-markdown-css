@@ -120,7 +120,7 @@ $line-number-background: #DCDCDC
   // LISTS
 
   li
-    line-height: 1.5em
+    line-height: 1.75em
 
   dt
     font-weight: bold
@@ -154,25 +154,32 @@ $line-number-background: #DCDCDC
     margin: 0
 
   pre,
-  code
+  code,
+  .highlighttable
     font-size: 14px
+    font-family: $code-font-family
+    background: $code-background
     line-height: 20px
+    border: 1px solid $border
+    -moz-border-radius: 3px
+    -webkit-border-radius: 3px
+    border-radius: 3px
+
+  .highlight,
+  .linenos
+    pre
+      border: none
 
   pre code, .code
     padding: .5em .75em
 
   code,
+
+  code
+    display: inline
+
   .highlighttable
     display: block
-    border: 1px solid $border
-    background: $code-background
-    font-family: $code-font-family
-    pre
-      font-family: $code-font-family
-
-    -moz-border-radius: 3px
-    -webkit-border-radius: 3px
-    border-radius: 3px
     tr
       border-bottom: none
     td
